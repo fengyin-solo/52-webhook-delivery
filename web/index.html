@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Webhook 分发服务</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header>
+    <h1>Webhook 分发服务</h1>
+  </header>
+  <main>
+    <section id="stats-section">
+      <h2>投递总览</h2>
+      <div id="stats" class="stats-grid"></div>
+    </section>
+    <section id="endpoints-section">
+      <h2>端点列表</h2>
+      <table id="endpoints-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>URL</th>
+            <th>状态</th>
+            <th>最大重试</th>
+            <th>超时(ms)</th>
+            <th>描述</th>
+            <th>创建时间</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+    <section id="deliveries-section">
+      <h2>投递记录</h2>
+      <table id="deliveries-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>事件ID</th>
+            <th>端点ID</th>
+            <th>状态</th>
+            <th>尝试次数</th>
+            <th>响应码</th>
+            <th>创建时间</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>
